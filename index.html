@@ -1,0 +1,497 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LITTLE JALABIYA | Premium Algerian Clothing</title>
+    <!-- Fonts: Playfair Display for Headings, Inter for Body -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Remix Icons -->
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <!-- Global Background Slider -->
+    <div class="site-bg-slider">
+        <div class="bg-slide active" style="background-image: url('assets/hero-1.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('assets/hero-2.jpg');"></div>
+        <div class="bg-slide" style="background-image: url('assets/hero-3.jpg');"></div>
+        <div class="bg-overlay"></div>
+    </div>
+
+    <!-- Navbar -->
+    <header class="navbar" id="navbar">
+        <div class="nav-container">
+            <div class="nav-left">
+                <button class="mobile-menu-btn" aria-label="Menu" id="mobile-menu-btn">
+                    <i class="ri-menu-4-line"></i>
+                </button>
+                <nav class="desktop-nav">
+                    <a href="#kids" class="nav-link">Kids</a>
+                    <a href="#men" class="nav-link">Men</a>
+                    <a href="#women" class="nav-link">Women</a>
+                </nav>
+            </div>
+
+            <a href="#" class="logo">LITTLE JALABIYA</a>
+
+            <div class="nav-right">
+                <button class="icon-btn" aria-label="Search"><i class="ri-search-line"></i></button>
+                <button class="icon-btn" id="login-btn" aria-label="User Account"><i class="ri-user-line"></i></button>
+                <button class="icon-btn" aria-label="Cart" id="cart-btn"><i class="ri-shopping-bag-line"></i><span
+                        class="cart-badge">0</span></button>
+            </div>
+        </div>
+
+        <!-- Mobile Navigation Menu -->
+        <div class="mobile-nav" id="mobile-nav">
+            <a href="#kids" class="mobile-nav-link">Kids</a>
+            <a href="#men" class="mobile-nav-link">Men</a>
+            <a href="#women" class="mobile-nav-link">Women</a>
+        </div>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section class="hero slide-up">
+            <div class="hero-content">
+                <span class="hero-subtitle fade-in">Authentic & Elegant</span>
+                <h1 class="fade-in delay-1">Tradition Meets Modernity</h1>
+                <p class="fade-in delay-2">Discover premium Algerian clothing for men, women, and kids. Embrace your
+                    heritage with style.</p>
+                <div class="hero-buttons fade-in delay-3">
+                    <a href="#kids" class="btn btn-primary">Shop for Kids</a>
+                    <a href="#men" class="btn btn-outline">Shop for Men</a>
+                    <a href="#women" class="btn btn-outline" style="margin-left: 1rem;">Shop for Women</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Kids Section (FIRST SLIDE) -->
+        <section class="category-showcase" id="kids">
+            <div class="container text-center">
+                <div class="section-header fade-in">
+                    <span class="collection-tag">Kids' Collection</span>
+                    <h2>Traditional Algerian Clothes</h2>
+                    <p>Pass down the heritage. Our children's collection brings the magic of traditional Algerian wear to the youngest generation, crafted for joy and comfort.</p>
+                </div>
+
+                <div class="kids-split-container fade-up">
+                    <!-- Girls Section -->
+                    <div class="kids-sub-category">
+                        <h4 class="kids-category-title">Little Girls <span>(Ages 4 - 14 Years)</span></h4>
+                        <div class="kids-gallery-split">
+                            <div class="product-card standalone-card with-img" data-title="كاراكو عاصيمي بنات" data-price="3500.00 DA" data-colors="Dark Green:#006400,Black:#222222,Burgundy:#800020,Gold:#FFD700" data-sizes="4 Years,6 Years,8 Years,10 Years,12 Years,14 Years" data-images="assets/girls-item-1.jpg,assets/girls-item-2.jpg,assets/girls-item-3.jpg" onclick="openProductModal(this)">
+                                <div class="card-image-wrapper card-carousel">
+                                    <img src="assets/girls-item-1.jpg" alt="كاراكو عاصيمي بنات" class="carousel-img active">
+                                    <img src="assets/girls-item-2.jpg" alt="كاراكو عاصيمي بنات" class="carousel-img">
+                                    <img src="assets/girls-item-3.jpg" alt="كاراكو عاصيمي بنات" class="carousel-img">
+                                    <button class="carousel-arrow prev" onclick="event.stopPropagation(); slideCarousel(this, -1)">&#10094;</button>
+                                    <button class="carousel-arrow next" onclick="event.stopPropagation(); slideCarousel(this, 1)">&#10095;</button>
+                                    <div class="carousel-dots">
+                                        <span class="dot active"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <h4>كاراكو عاصيمي بنات</h4>
+                                    <span class="price">3500.00 DA</span>
+                                    <div class="card-options mt-2">
+                                        <div class="colors">
+                                            <span class="color-circle" style="background-color: #006400;" title="Dark Green"></span>
+                                            <span class="color-circle" style="background-color: #222222;" title="Black"></span>
+                                            <span class="color-circle" style="background-color: #800020;" title="Burgundy"></span>
+                                            <span class="color-circle" style="background-color: #FFD700;" title="Gold"></span>
+                                        </div>
+                                        <span class="size-badge" style="margin-top:0;">4 - 14 Yrs</span>
+                                    </div>
+                                </div>
+                                <button class="btn-shop-icon" onclick="event.stopPropagation(); openProductModal(this.parentElement)"><i class="ri-shopping-bag-add-line"></i></button>
+                            </div>
+                            <div class="product-card standalone-card with-img" data-title="فستان قبائلي بنات" data-price="2600.00 DA" data-colors="White:#FFFFFF,Black:#222222,Blue:#0000FF,Green:#008000" data-sizes="4 Years,6 Years,8 Years,10 Years,12 Years,14 Years" data-images="assets/girls-kabyle-1.jpg,assets/girls-kabyle-2.jpg,assets/girls-kabyle-3.jpg,assets/girls-kabyle-4.jpg" onclick="openProductModal(this)">
+                                <div class="card-image-wrapper card-carousel">
+                                    <img src="assets/girls-kabyle-1.jpg" alt="فستان قبائلي بنات" class="carousel-img active">
+                                    <img src="assets/girls-kabyle-2.jpg" alt="فستان قبائلي بنات" class="carousel-img">
+                                    <img src="assets/girls-kabyle-3.jpg" alt="فستان قبائلي بنات" class="carousel-img">
+                                    <img src="assets/girls-kabyle-4.jpg" alt="فستان قبائلي بنات" class="carousel-img">
+                                    <button class="carousel-arrow prev" onclick="event.stopPropagation(); slideCarousel(this, -1)">&#10094;</button>
+                                    <button class="carousel-arrow next" onclick="event.stopPropagation(); slideCarousel(this, 1)">&#10095;</button>
+                                    <div class="carousel-dots">
+                                        <span class="dot active"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <h4>فستان قبائلي بنات</h4>
+                                    <span class="price">2600.00 DA</span>
+                                    <div class="card-options mt-2">
+                                        <div class="colors">
+                                            <span class="color-circle" style="background-color: #FFFFFF; border: 1px solid #ddd;" title="White"></span>
+                                            <span class="color-circle" style="background-color: #222222;" title="Black"></span>
+                                            <span class="color-circle" style="background-color: #0000FF;" title="Blue"></span>
+                                            <span class="color-circle" style="background-color: #008000;" title="Green"></span>
+                                        </div>
+                                        <span class="size-badge" style="margin-top:0;">4 - 14 Yrs</span>
+                                    </div>
+                                </div>
+                                <button class="btn-shop-icon" onclick="event.stopPropagation(); openProductModal(this.parentElement)"><i class="ri-shopping-bag-add-line"></i></button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Boys Section -->
+                    <div class="kids-sub-category">
+                        <h4 class="kids-category-title">Little Boys <span>(Ages 1 Week - 14 Years)</span></h4>
+                        <div class="kids-gallery-split">
+                            <div class="product-card standalone-card with-img" data-title="كاراكو عاصيمي اولاد" data-price="2800.00 DA" data-colors="Navy:#000080,White:#FFFFFF,Burgundy:#800020,Emerald:#50C878" data-sizes="1 Week,1 Month,6 Months,1 Year,3 Years,5 Years,7 Years,10 Years,14 Years" data-images="assets/boys-item-1.jpg,assets/boys-item-2.jpg,assets/boys-item-3.jpg" onclick="openProductModal(this)">
+                                <div class="card-image-wrapper card-carousel">
+                                    <img src="assets/boys-item-1.jpg" alt="كاراكو عاصيمي اولاد" class="carousel-img active">
+                                    <img src="assets/boys-item-2.jpg" alt="كاراكو عاصيمي اولاد" class="carousel-img">
+                                    <img src="assets/boys-item-3.jpg" alt="كاراكو عاصيمي اولاد" class="carousel-img">
+                                    <button class="carousel-arrow prev" onclick="event.stopPropagation(); slideCarousel(this, -1)">&#10094;</button>
+                                    <button class="carousel-arrow next" onclick="event.stopPropagation(); slideCarousel(this, 1)">&#10095;</button>
+                                    <div class="carousel-dots">
+                                        <span class="dot active"></span>
+                                        <span class="dot"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <h4>كاراكو عاصيمي اولاد</h4>
+                                    <span class="price">2800.00 DA</span>
+                                    <div class="card-options mt-2">
+                                        <div class="colors">
+                                            <span class="color-circle" style="background-color: #000080;" title="Navy"></span>
+                                            <span class="color-circle" style="background-color: #FFFFFF;" title="White"></span>
+                                            <span class="color-circle" style="background-color: #800020;" title="Burgundy"></span>
+                                            <span class="color-circle" style="background-color: #50C878;" title="Emerald"></span>
+                                        </div>
+                                        <span class="size-badge" style="margin-top:0;">1 Wk - 14 Yrs</span>
+                                    </div>
+                                </div>
+                                <button class="btn-shop-icon" onclick="event.stopPropagation(); openProductModal(this.parentElement)"><i class="ri-shopping-bag-add-line"></i></button>
+                            </div>
+                            <div class="product-card standalone-card with-img" data-title="لباس تقليدي قبائلي" data-price="2000.00 DA" data-colors="White:#FFFFFF,Black:#222222" data-sizes="1 Week,1 Month,6 Months,1 Year,3 Years,5 Years,7 Years,10 Years,14 Years" data-images="assets/boys-kabyle-1.jpg,assets/boys-kabyle-2.jpg" onclick="openProductModal(this)">
+                                <div class="card-image-wrapper card-carousel">
+                                    <img src="assets/boys-kabyle-1.jpg" alt="لباس تقليدي قبائلي" class="carousel-img active">
+                                    <img src="assets/boys-kabyle-2.jpg" alt="لباس تقليدي قبائلي" class="carousel-img">
+                                    <button class="carousel-arrow prev" onclick="event.stopPropagation(); slideCarousel(this, -1)">&#10094;</button>
+                                    <button class="carousel-arrow next" onclick="event.stopPropagation(); slideCarousel(this, 1)">&#10095;</button>
+                                    <div class="carousel-dots">
+                                        <span class="dot active"></span>
+                                        <span class="dot"></span>
+                                    </div>
+                                </div>
+                                <div class="product-details">
+                                    <h4>لباس تقليدي قبائلي</h4>
+                                    <span class="price">2000.00 DA</span>
+                                    <div class="card-options mt-2">
+                                        <div class="colors">
+                                            <span class="color-circle" style="background-color: #FFFFFF; border: 1px solid #ddd;" title="White"></span>
+                                            <span class="color-circle" style="background-color: #222222;" title="Black"></span>
+                                        </div>
+                                        <span class="size-badge" style="margin-top:0;">1 Wk - 14 Yrs</span>
+                                    </div>
+                                </div>
+                                <button class="btn-shop-icon" onclick="event.stopPropagation(); openProductModal(this.parentElement)"><i class="ri-shopping-bag-add-line"></i></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="text-center fade-in" style="margin-top: 3rem;">
+                    <a href="#" class="btn btn-outline">Shop All Kids</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Men's Section (SECOND SLIDE) -->
+        <section class="category-showcase" id="men">
+            <div class="container">
+                <div class="collection-block">
+                    <div class="collection-text fade-left">
+                        <span class="collection-tag">Men's Collection</span>
+                        <h3>Prayer Thawb & Qamis</h3>
+                        <p>Experience the perfect blend of comfort and dignity. Our Prater Thawb collection features premium fabrics, tailored cuts, and subtle details designed for the modern gentleman who honors tradition.</p>
+                        <ul class="features-list">
+                            <li><i class="ri-check-line"></i> Premium breathable fabrics</li>
+                            <li><i class="ri-check-line"></i> Tailored modern fit</li>
+                            <li><i class="ri-check-line"></i> Elegant minimalist embroidery</li>
+                        </ul>
+                        <a href="#" class="btn btn-text">View Full Collection <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                    <div class="collection-images fade-right">
+                        <div class="product-card standalone-card with-img" data-title="قميص الغيث" data-price="5000.00 DA" data-colors="Green:#006400,Black:#222222,Blue:#0000FF,Night Blue:#000033,Grey:#808080" data-sizes="S,M,L,XL,XXL" data-images="assets/men-ghaith-1.jpg,assets/men-ghaith-2.jpg,assets/men-ghaith-3.jpg" onclick="openProductModal(this)">
+                            <div class="card-image-wrapper card-carousel">
+                                <img src="assets/men-ghaith-1.jpg" alt="قميص الغيث" class="carousel-img active">
+                                <img src="assets/men-ghaith-2.jpg" alt="قميص الغيث" class="carousel-img">
+                                <img src="assets/men-ghaith-3.jpg" alt="قميص الغيث" class="carousel-img">
+                                <button class="carousel-arrow prev" onclick="event.stopPropagation(); slideCarousel(this, -1)">&#10094;</button>
+                                <button class="carousel-arrow next" onclick="event.stopPropagation(); slideCarousel(this, 1)">&#10095;</button>
+                                <div class="carousel-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                            <div class="product-details">
+                                <h4>قميص الغيث</h4>
+                                <span class="price">5000.00 DA</span>
+                                <div class="card-options mt-2">
+                                    <div class="colors">
+                                        <span class="color-circle" style="background-color: #006400;" title="Green"></span>
+                                        <span class="color-circle" style="background-color: #222222;" title="Black"></span>
+                                        <span class="color-circle" style="background-color: #0000FF;" title="Blue"></span>
+                                        <span class="color-circle" style="background-color: #000033;" title="Night Blue"></span>
+                                        <span class="color-circle" style="background-color: #808080;" title="Grey"></span>
+                                    </div>
+                                    <span class="size-badge" style="margin-top:0;">S - XXL</span>
+                                </div>
+                            </div>
+                            <button class="btn-shop-icon" onclick="event.stopPropagation(); openProductModal(this.parentElement)"><i class="ri-shopping-bag-add-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Women's Section (THIRD SLIDE) -->
+        <section class="category-showcase" id="women">
+            <div class="container">
+                <div class="collection-block reverse">
+                    <div class="collection-text fade-right">
+                        <span class="collection-tag">Women's Collection</span>
+                        <h3>Modest Elegance</h3>
+                        <p>Discover our exclusive range of Karakou, Abayas, and elegant dresses. Crafted with intricate details and luxurious materials to celebrate the beauty of Algerian femininity.</p>
+                        <ul class="features-list">
+                            <li><i class="ri-check-line"></i> Hand-stitched embroidery</li>
+                            <li><i class="ri-check-line"></i> Luxurious velvet and silk</li>
+                            <li><i class="ri-check-line"></i> Timeless silhouettes</li>
+                        </ul>
+                        <a href="#" class="btn btn-text">View Full Collection <i class="ri-arrow-right-line"></i></a>
+                    </div>
+                    <div class="collection-images fade-left" style="display: flex; gap: 1.5rem; justify-content: center; flex-wrap: wrap;">
+                        <div class="product-card standalone-card with-img" data-title="لباس الصلاة نساء" data-price="1400.00 DA" data-colors="Purple:#4A148C,Pink:#D81B60,Teal:#00695C" data-sizes="S,M,L,XL,XXL" data-images="assets/women-prayer-1.jpg,assets/women-prayer-2.jpg,assets/women-prayer-3.jpg" onclick="openProductModal(this)">
+                            <div class="card-image-wrapper card-carousel">
+                                <img src="assets/women-prayer-1.jpg" alt="لباس الصلاة نساء" class="carousel-img active">
+                                <img src="assets/women-prayer-2.jpg" alt="لباس الصلاة نساء" class="carousel-img">
+                                <img src="assets/women-prayer-3.jpg" alt="لباس الصلاة نساء" class="carousel-img">
+                                <button class="carousel-arrow prev" onclick="event.stopPropagation(); slideCarousel(this, -1)">&#10094;</button>
+                                <button class="carousel-arrow next" onclick="event.stopPropagation(); slideCarousel(this, 1)">&#10095;</button>
+                                <div class="carousel-dots">
+                                    <span class="dot active"></span>
+                                    <span class="dot"></span>
+                                    <span class="dot"></span>
+                                </div>
+                            </div>
+                            <div class="product-details">
+                                <h4>لباس الصلاة نساء</h4>
+                                <span class="price">1400.00 DA</span>
+                                <div class="card-options mt-2">
+                                    <div class="colors">
+                                        <span class="color-circle" style="background-color: #4A148C;" title="Purple"></span>
+                                        <span class="color-circle" style="background-color: #D81B60;" title="Pink"></span>
+                                        <span class="color-circle" style="background-color: #00695C;" title="Teal"></span>
+                                    </div>
+                                    <span class="size-badge" style="margin-top:0;">S - XXL</span>
+                                </div>
+                            </div>
+                            <button class="btn-shop-icon" onclick="event.stopPropagation(); openProductModal(this.parentElement)"><i class="ri-shopping-bag-add-line"></i></button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Newsletter Section -->
+        <section class="newsletter fade-in">
+            <div class="container text-center">
+                <h2>Join the LITTLE JALABIYA Family</h2>
+                <p>Subscribe to receive updates, access to exclusive deals, and more.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Enter your email address" required>
+                    <button type="submit" class="btn btn-primary">Subscribe</button>
+                </form>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h3>LITTLE JALABIYA</h3>
+                    <p>Elevating traditional Algerian clothing for the modern world. Quality, heritage, and style in every stitch.</p>
+                    <div class="social-links">
+                        <a href="#"><i class="ri-instagram-line"></i></a>
+                        <a href="#"><i class="ri-facebook-fill"></i></a>
+                        <a href="#"><i class="ri-twitter-x-line"></i></a>
+                    </div>
+                </div>
+                <div class="footer-links">
+                    <h4>Shop</h4>
+                    <a href="#men">Men's Prater Thawb</a>
+                    <a href="#women">Women's Collection</a>
+                    <a href="#kids">Kids' Traditional</a>
+                    <a href="#">Accessories</a>
+                </div>
+                <div class="footer-links">
+                    <h4>About</h4>
+                    <a href="#">Our Story</a>
+                    <a href="#">Artisans</a>
+                    <a href="#">Sustainability</a>
+                    <a href="#">Contact Us</a>
+                </div>
+                <div class="footer-links">
+                    <h4>Customer Care</h4>
+                    <a href="#">Shipping & Returns</a>
+                    <a href="#">Size Guide</a>
+                    <a href="#">FAQ</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 LITTLE JALABIYA. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Product Quick View Modal -->
+    <div class="modal-overlay" id="product-modal">
+        <div class="modal-content product-content">
+            <button class="modal-close" id="product-close">&times;</button>
+            <div class="product-modal-grid">
+                <div class="product-modal-img">
+                    <img src="" id="modal-img" alt="Product">
+                    <div id="modal-no-img" class="modal-no-img" style="display:none;">No Image Available</div>
+                </div>
+                <div class="product-modal-info">
+                    <h3 id="modal-title">Product Title</h3>
+                    <div class="modal-price" id="modal-price">120.00 DA</div>
+
+                    <div class="option-group">
+                        <label>Color</label>
+                        <div class="modal-colors" id="modal-colors">
+                            <!-- Injected dynamically -->
+                        </div>
+                    </div>
+
+                    <div class="option-group">
+                        <label>Size</label>
+                        <select id="modal-size-select" class="form-select">
+                            <!-- Injected dynamically -->
+                        </select>
+                    </div>
+
+                    <button class="btn btn-primary btn-full mt-4" id="btn-add-order">Add to Order Now</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Search Modal -->
+    <div class="modal-overlay" id="search-modal">
+        <div class="search-container">
+            <button class="modal-close" id="search-close">&times;</button>
+            <input type="text" id="search-input" class="search-input"
+                placeholder="Search for clothes, styles, colors...">
+            <div class="search-results" id="search-results">
+                <!-- Results injected via JS -->
+            </div>
+        </div>
+    </div>
+
+    <!-- Login Modal -->
+    <div class="modal-overlay" id="login-modal">
+        <div class="modal-content">
+            <button class="modal-close" id="modal-close">&times;</button>
+            <div class="modal-header">
+                <h3>Welcome</h3>
+                <p>Create an account or sign in</p>
+            </div>
+            <div class="modal-body">
+                <button class="btn btn-google">
+                    <img src="https://www.svgrepo.com/show/475656/google-color.svg" alt="Google Logo"
+                        class="google-icon">
+                    Sign in with Gmail
+                </button>
+
+                <div class="modal-divider"><span>or</span></div>
+
+                <form class="login-form">
+                    <div class="input-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" placeholder="Enter your email" required>
+                    </div>
+                    <div class="input-group">
+                        <label for="password">Password</label>
+                        <input type="password" id="password" placeholder="Enter your password" required>
+                    </div>
+                    <div class="form-actions">
+                        <label><input type="checkbox"> Remember me</label>
+                        <a href="#" class="forgot-link">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-full">Sign In / Create Account</button>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="checkout-modal" class="modal-overlay">
+        <div class="modal-content checkout-modal-content">
+            <button class="modal-close" id="close-checkout-modal">&times;</button>
+            <div id="checkout-form-container">
+                <div class="modal-header">
+                    <h3>Confirm Your Order</h3>
+                    <p>Enter your details to finalize your purchase</p>
+                </div>
+                <div class="modal-body">
+                    <form id="checkout-form">
+                        <div class="input-group">
+                            <label for="checkout-full-name">Full Name</label>
+                            <input type="text" id="checkout-full-name" placeholder="Enter your full name" required>
+                        </div>
+                        <div class="input-group">
+                            <label for="checkout-phone">Phone Number</label>
+                            <input type="tel" id="checkout-phone" placeholder="Enter your phone number" required>
+                        </div>
+                        
+                        <div id="order-summary-small" class="order-summary-mini mt-3">
+                            <!-- Filled by JS -->
+                        </div>
+
+                        <button type="submit" class="btn btn-primary btn-full mt-4">Confirm Order Now</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- Success State -->
+            <div id="order-success-container" style="display: none; text-align: center; padding: 2rem 1rem;">
+                <div class="success-checkmark">
+                    <div class="check-icon">
+                        <span class="icon-line line-tip"></span>
+                        <span class="icon-line line-long"></span>
+                        <div class="icon-circle"></div>
+                        <div class="icon-fix"></div>
+                    </div>
+                </div>
+                <h3 style="font-family: 'Playfair Display', serif; font-size: 1.8rem; margin-top: 1.5rem; color: var(--text-main);">Order Complete!</h3>
+                <p style="color: #666; margin-top: 0.5rem; font-size: 1.1rem;">We will call you soon to confirm your delivery.</p>
+                <button class="btn btn-outline mt-4" onclick="closeCheckoutModal()">Close</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
